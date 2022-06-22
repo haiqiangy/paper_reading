@@ -34,4 +34,8 @@
 1. 在bipartite matching的时候，通过均匀采样的方式在K个点集上计算match loss
 2. 在计算最终损失时按importance sampling来采样K个点集。
 ## Ablation studies
+![albation](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2fomer_ablation.png?raw=true)
+![albation2](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2fomer_ablation2.png?raw=true)
+ps:在匹配是用point代替mask能有效提升精度
+## Experiments
 
