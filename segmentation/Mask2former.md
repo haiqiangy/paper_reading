@@ -4,7 +4,7 @@
 ![结果对比](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2former_result.png?raw=true)
 ## Structure
 ![mask2former结构](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2former_structure.png?raw=true)
-和mask-rcnn一样，mask2former采用mask classification的方式来进行分割。mask-rcnn和mask2former在如何生产二值mask上的做法不同。mask-rcnn是通过bounding boxes的方式来表示，使得mask-rcnn无法进行semantic segmentaion任务。而Mask2Former参考了Detr的做法，将这些二值mask用一组C维的特征向量来表示(object query)，这样就可以用transformer decoder，通过一组固定的query来进行训练。
+</br>和mask-rcnn一样，mask2former采用mask classification的方式来进行分割。mask-rcnn和mask2former在如何生产二值mask上的做法不同。mask-rcnn是通过bounding boxes的方式来表示，使得mask-rcnn无法进行semantic segmentaion任务。而Mask2Former参考了Detr的做法，将这些二值mask用一组C维的特征向量来表示(object query)，这样就可以用transformer decoder，通过一组固定的query来进行训练。
 1. Backbone(resnet、swin)
 从图片中抽取低分辨率的特征
 2. Pixel Decoder
@@ -22,7 +22,7 @@
 - masked cross attention函数
 ![masked cross attention](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/masked_cross_attention_1.png?raw=true)
 ![masked cross attention2](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/masked_cross_attention_2.png?raw=true)
-ps:mask是前一层transformer decoder block输出的feature做二值化之后的结果
+</br>ps:mask是前一层transformer decoder block输出的feature做二值化之后的结果
 ### efficient multi-scale strategy
 具体的讲就是将pixel decoder中尺度为原图1/32、1/16、1/8的特征依次作为对应transformer decoder block的K、V的输入。参照deformable detr的做法，对每个输入都加上了sinusoidal positional embedding和learnable scale-level embedding。按分辨率从低到高的循序依次输入，并循环L次。
 ### Optimization improvements
@@ -36,7 +36,7 @@ ps:mask是前一层transformer decoder block输出的feature做二值化之后�
 ## Ablation studies
 ![albation](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2fomer_ablation.png?raw=true)
 ![albation2](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2fomer_ablation2.png?raw=true)
-ps:在匹配是用point代替mask能有效提升精度
+</br>ps:在匹配是用point代替mask能有效提升精度
 ## Experiments
 ![panopatic](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2former_panoptic_result.png?raw=true)
 ![instance](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/mask2former_instance_result.png?raw=true)
