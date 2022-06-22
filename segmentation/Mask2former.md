@@ -15,3 +15,11 @@
 1. 和一般transformer decoder不同，mask2former在transformer deocder中加入了masked attention，将cross attention限制在每个query关注的前景区域中
 2. 采用了多尺度策略，将pixel decoder中的特征金字塔依次输入到transformer decoder中
 ### masked attention
+- 目的
+    上下文特征被证明对分割任务有重要的作用，但是在transformer based的方法中用cross attention存在收敛慢的问题。本文使用mask attention来解决这个问题。
+- cross attention函数
+![cross attention](https://github.com/haiqiangy/paper_reading/blob/main/segmentation/figs/cross_attention_function.png?raw=true)
+- masked cross attention函数
+    ps:mask是前一层transformer decoder block输出的feature做二值化之后的结果
+### efficient multi-scale strategy
+    具体的讲就是将pixel decoder中
