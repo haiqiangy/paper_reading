@@ -11,3 +11,7 @@
     从低分辨率的特征中逐步上采样得到高分辨率的特征
 3. Transformer Decoder
     通过图像特征产生对应的目标queries
+## Transformer decoder with masked attention
+1. 和一般transformer decoder不同，mask2former在transformer deocder中加入了masked attention，将cross attention限制在每个query关注的前景区域中
+2. 采用了多尺度策略，将pixel decoder中的特征金字塔依次输入到transformer decoder中
+### masked attention
