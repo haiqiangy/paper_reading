@@ -1,4 +1,4 @@
-# self-supervised learning paper list
+# self-supervised learning
 ## Contrasive Learning
 ### 2020
 - [**moco v1**] Momentum Contrast for Unsupervised Visual Representation Learning
@@ -18,5 +18,5 @@ by Contrasting Cluster Assignments [NeurIPS'2020] [[paper]](https://arxiv.org/pd
 - [**SimMiM**] SimMIM: a Simple Framework for Masked Image Modeling [[paper]](https://arxiv.org/pdf/2111.09886.pdf) [[code]](https://github.com/microsoft/SimMIM)
 - [**CAE**] Context Autoencoder for Self-Supervised Representation Learning [[paper]](https://arxiv.org/pdf/2202.03026.pdf) [[code]](https://github.com/open-mmlab/mmselfsup/tree/master/configs/selfsup/cae)
 ### 2022
-- [ConvMAE] ConvMAE: Masked Convolution Meets Masked Autoencoders [[paper]](https://arxiv.org/abs/2205.03892) [[code]](https://github.com/Alpha-VL/ConvMAE)
-- [FastConvMAE] Fast ConvMAE: Fast Pretraining of ConvMAE [[code]](https://github.com/Alpha-VL/FastConvMAE)
+- [**ConvMAE**] ConvMAE: Masked Convolution Meets Masked Autoencoders [[paper]](https://arxiv.org/abs/2205.03892) [[code]](https://github.com/Alpha-VL/ConvMAE)
+- [**FastConvMAE**] Fast ConvMAE: Fast Pretraining of ConvMAE [[code]](https://github.com/Alpha-VL/FastConvMAE)
