@@ -25,5 +25,5 @@ M3AE方法可以在文图对和只有图片的两种数据上共同进行训练�
 ![vis1](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment5.png?raw=true)<br/>
 ![vis2](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment6.png?raw=true)<br/>
 在给定文本token和图像patch的时候，M3AE都能在图像和文本上给出较合理的attention解释。
-![]()<br/>
+![vis3](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment7.png?raw=true)<br/>
 通过 t-SNE方式分别对MAE和M3AE在imagenet10个类别上的表征进行可视化。证明M3AE具有更强的区分能力
