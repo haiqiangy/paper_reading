@@ -13,4 +13,7 @@
 ### M3AE scale well with model size and training time
 ![experiment1](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment1.png?raw=true)<br/>
 在扩展模型大小和训练时间的时候M3AE方法的精度都能获得有效的提升。
-### 
+### M3AE在不同文图对比例下的精度
+![experiment2](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment2.png?raw=true)</br>
+M3AE方法可以在文图对和只有图片的两种数据上共同进行训练，相比于CLIP这种对比学习方法限制更少，而相比于MAE这种单模态的方法，能够有效的利用text中的监督信息取得更好的效果
+### Out-of-distribution detection
