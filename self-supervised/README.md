@@ -20,3 +20,6 @@ by Contrasting Cluster Assignments [NeurIPS'2020] [[paper]](https://arxiv.org/pd
 ### 2022
 - [**ConvMAE**] ConvMAE: Masked Convolution Meets Masked Autoencoders [[paper]](https://arxiv.org/abs/2205.03892) [[code]](https://github.com/Alpha-VL/ConvMAE)
 - [**FastConvMAE**] Fast ConvMAE: Fast Pretraining of ConvMAE [[code]](https://github.com/Alpha-VL/FastConvMAE)
+## multimodal
+- [**M3AE**] Multimodal Masked Autoencoders
+Learn Transferable Representations [[paper]](https://arxiv.org/abs/2205.14204)
