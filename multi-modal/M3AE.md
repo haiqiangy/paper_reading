@@ -17,3 +17,9 @@
 ![experiment2](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment2.png?raw=true)</br>
 M3AE方法可以在文图对和只有图片的两种数据上共同进行训练，相比于CLIP这种对比学习方法限制更少，而相比于MAE这种单模态的方法，能够有效的利用text中的监督信息取得更好的效果
 ### Out-of-distribution detection
+![experiment3](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment3.png?raw=true)
+### text mask ratio
+![experiment4](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/m3ae-experiment4.png?raw=true)<br/>
+和bert中mask掉15%的情况不同，M3AE这种多模态的预训练范式，在text的mask掉75%的时候能取得较好的精度。
+## 可视化解释
+
