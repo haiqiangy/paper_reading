@@ -1,6 +1,7 @@
 # M3AE Brief Introduction
 ## Abstract
-&emsp;&emsp;本文提出了Multimodal Masked Autoencoder (M3AE)，通过统一的一个编码器以masked token prediction方式来学习图像和文本的表征。1.在这种范式下，作者发现对文本采用（50%-90%）的掩码率能取得具有更好表征效果的模型。这点和Bert的15%有所不同。2.M3AE在扩展模型大小和数据集大小的时候，能取得有效的精度提升。3.由于使用了统一的解码器，在进行预训练的时候即能够利用image-text对数据，也能够利用不成对的数据进行训练。
+[[paper]](https://arxiv.org/abs/2205.14204)<br/>
+&emsp;&emsp;本文提出了Multimodal Masked Autoencoder (M3AE)，通过统一的一个编码器以masked token prediction方式来学习图像和文本的统一表征。1.在这种范式下，作者发现对文本采用（50%-90%）的掩码率能取得具有更好表征效果的模型。这点和Bert的15%有所不同。2.M3AE在扩展模型大小和数据集大小的时候，能取得有效的精度提升。3.由于使用了统一的解码器，在进行预训练的时候即能够利用image-text对数据，也能够利用不成对的数据进行训练。
 ## Architecture and Pipeline
 ![architecture](https://raw.githubusercontent.com/haiqiangy/paper_reading/main/multi-modal/figs/m3ae-architecture.png)<br/>
 &emsp;&emsp;M3AE做预训练的模型结构和MAE基本一致，包括一个编码器将文本和图像映射到一个共同的表征空间和一个轻量级的解码器用于重建文本和图像中被mask掉的部分。简单说明一下M3AE预训练时候的流程。<br/>
