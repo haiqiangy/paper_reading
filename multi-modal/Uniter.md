@@ -24,4 +24,5 @@ height, and area.)。最后通过两个FC层+LN映射到emdeding所需的维度�
 ### Masked Region Modeling (MRM) 
 &emsp;&emsp;采用15%的mask ratio，mask掉的部分用0代替。这个任务有三种变体：MRFR去拟合pooled ROI features、MRC去学习这个部分的标签类别，将Faster R-CNN预测的最大概率作为真值。MRC-kl去拟合Faster R-CNN输出logit之间的kl散度。
 ## Experiment
-
+![res1](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/UNITER_result1.png?raw=true)
+![res2](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/uniter_result2.png?raw=true)
