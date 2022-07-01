@@ -5,3 +5,7 @@
 ## Structure and training setting
 ![sturct](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/clip_structure.png?raw=true)<br/>
 &emsp;&emsp;CLIP从结构和实现上来看都非常简单，包括一个Text Encoder和Image Encoder。训练过程也很简单，伪代码如下：<br/>
+![code](https://github.com/haiqiangy/paper_reading/blob/main/multi-modal/figs/clip_code.png?raw=true)<br/>
+&emsp;&emsp;训练过程中使用了32768作为batch_size。但是文图embeding相似度矩阵的计算是在单个gpu下各自计算单卡batch的gpu（ps：感觉机器卡不多的情况下可以用梯度累计的方式来训练）
+## Experiment
+### Zero-shot transfer
