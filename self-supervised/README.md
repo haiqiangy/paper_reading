@@ -12,6 +12,7 @@ by Contrasting Cluster Assignments [NeurIPS'2020] [[paper]](https://arxiv.org/pd
 - [**moco v3**] An Empirical Study of Training Self-Supervised Vision Transformers [ICCV'2021] [[paper]](https://arxiv.org/pdf/2104.02057.pdf) [[code]](https://github.com/facebookresearch/moco-v3)
 ### 2022
 - [**ContrastiveCrop**] Crafting Better Contrastive Views for Siamese Representation Learning [CVPR'2022] [[paper]](https://arxiv.org/abs/2202.03278) [[code]](https://github.com/xyupeng/ContrastiveCrop)
+- [**Feature-Distillation**] Contrastive Learning Rivals Masked Image Modeling in Fine-tuning via Feature Distillation [[paper]](https://arxiv.org/abs/2205.14141) [[code]](https://github.com/SwinTransformer/Feature-Distillation)
 ## Auto encoder
 ### 2021
 - [**MAE**] Masked Autoencoders Are Scalable Vision Learners [[paper]](https://arxiv.org/pdf/2111.06377.pdf) [[code]](https://github.com/facebookresearch/mae)
